@@ -13,8 +13,17 @@
       programmers
     </p>
     <form action="" id="survey-form">
-      <input type="text" name="name" id="name" required/>
-      <input type="email" name="email" id="email" required/>
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter Your Name" required/>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter Your Email" required/>
+      <label for="number" id="number-label">Number</label>
+      <input type="number" min="50" max="100" name="number" id="number" placeholder="Enter Your Number" />
+      <select name="select" id="dropdown">
+        <option value="Select">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
