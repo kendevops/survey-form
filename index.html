@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
@@ -14,16 +15,46 @@
     </p>
     <form action="" id="survey-form">
       <label for="name" id="name-label">Name</label>
-      <input type="text" name="name" id="name" placeholder="Enter Your Name" required/>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Your Name"
+        required
+      />
       <label for="email" id="email-label">Email</label>
-      <input type="email" name="email" id="email" placeholder="Enter Your Email" required/>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required
+      />
       <label for="number" id="number-label">Number</label>
-      <input type="number" min="50" max="100" name="number" id="number" placeholder="Enter Your Number" />
+      <input
+        type="number"
+        min="50"
+        max="100"
+        name="number"
+        id="number"
+        placeholder="Enter Your Number"
+      />
       <select name="select" id="dropdown">
         <option value="Select">Select</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
       </select>
+      <input type="radio" name="skills" value="Programmer" checked />Programmer
+      <input type="radio" name="skills" value="Designer" />Designer
+      <input type="radio" name="skills" value="Technical Writter" />Technical
+      Writter
+      <input type="checkbox" name="languages" value="JavaScript" />JavaScript
+      <input type="checkbox" name="languages" value="Python" />Python
+      <input type="checkbox" name="languages" value="C++" />C++
+      <input type="checkbox" name="languages" value="Java" />Java
+      <input type="checkbox" name="languages" value="Pascal" />Pascal
+      <textarea name="comments" id="" cols="30" rows="10"></textarea>
+      <button type="submit" id="submit">submit</button>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
